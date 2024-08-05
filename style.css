@@ -1,37 +1,51 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-style: var(--font-framily);
 }
 
 :root {
-    --primary-color: #8053FF;
-    --main-body-color: #23155B;
-    --gray-light-color: #817d8e;
-    --white-color: #f4f4f4;
-    --background-color: #f4f4f4;
+  --primary-color: #8053ff;
+  --main-body-color: #23155b;
+  --gray-light-color: #817d8e;
+  --white-color: #f4f4f4;
+  --background-color: #f4f4f4;
 
-    --font-framily: Martel Sans, sans-serif;
-    --alternative-font: Noto Sans Khojki;
-  }
+  --font-framily: Martel Sans, sans-serif;
+  --alternative-font: Noto Sans Khojki;
+}
 
-  nav{
+.container {
+  background-color: var(--background-color);
+  max-width: 1520px;
+  margin-inline: auto;
+}
+
+.navbar {
+  display: grid;
+  gap: 20px;
+  padding: 24px 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    /* grid-template-columns: 1fr 1fr; */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--background-color);
+    justify-content: space-between;
   }
-  
-  .CLA-logo {
-   margin-left: -150px;
+}
 
-  }
+.codelabs_logo {
+  text-align: center;
+}
 
-  div.contact-links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
+.navlist {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+ul.navlist {
+  padding: 15px;
+}
