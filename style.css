@@ -1,19 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
-  font-style: var(--font-framily);
+  background-color: var(--gray-light-color-body);
+  font-family: var(--font-framily);
+  color: var(--main-color); 
 }
 
 :root {
-  --primary-color: #8053ff;
-  --main-body-color: #23155b;
-  --gray-light-color: #817d8e;
-  --white-color: #f4f4f4;
+  --primary-text-button-color: #8053ff;
+  --main-color: #23155b;
+  --gray-light-color-body: #817d8e;
+  --white-background-form-color: #f4f4f4;
   --background-color: #f4f4f4;
 
-  --font-framily: Martel Sans, sans-serif;
-  --alternative-font: Noto Sans Khojki;
+  --font-framily: Martel Sans, Noto Sans Khojki, sans-serif;
+
 }
 
 .container {
@@ -22,22 +23,25 @@ body {
   margin-inline: auto;
 }
 
+
 .navbar {
   display: grid;
   gap: 20px;
   padding: 24px 12px;
+ 
 }
 
-@media screen and (min-width: 1024px) {
-  .navbar {
-    /* grid-template-columns: 1fr 1fr; */
-    display: flex;
-    justify-content: space-between;
-  }
+
+.navlist a {
+  text-decoration: none;
+  color: #23155b;
+ 
 }
+
 
 .codelabs_logo {
   text-align: center;
+  padding-left: 50px;
 }
 
 .navlist {
@@ -46,6 +50,195 @@ body {
   justify-content: space-around;
 }
 
-ul.navlist {
-  padding: 15px;
+
+.navlist .join_button a button {
+  background-color:var(--primary-text-button-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
+
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.manager-button {
+  background-color: #dbd3d3;
+  color: #fff;
+  border-color: #8053ff;
+  padding: 15px 30px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+
+.coder-button {
+  background-color: var(--primary-text-button-color);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+
+.statistics {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.statistics h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.statistics-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+
+  footer.copyright {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9em;
+    padding-left: 250px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+ 
+  }
+    .codelabs_logo {
+      text-align: start;
+      padding-left: 50px;
+    }
+   
+    .stat-box {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 5px;
+      width: 330px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+  
+  
+}
+
+
+
+footer {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 50px 20px;
+  border-top-left-radius: 120px;
+  
+  
+}
+
+footer form {
+  color: #fff;
+}
+
+footer form h1 {
+  color: #fff;
+}
+
+footer form label {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+}
+
+footer form input[type="text"],
+footer form input[type="submit"] {
+  width: 500px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--main-color)
+  background-color: #fff;
+}
+
+footer form input[type="submit"] {
+  background-color: var(--primary-text-button-color);
+  color: #fff;
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+.copyright {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 0.9em;
+ text-align: center;
+}
+
+
+
