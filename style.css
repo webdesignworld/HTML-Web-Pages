@@ -1,10 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--gray-light-color-body);
+  background-color: var(--background-color);
   font-family: var(--font-framily);
   color: var(--main-color); 
 }
+
+
 
 :root {
   --primary-text-button-color: #8053ff;
@@ -66,10 +68,11 @@ body {
   background-color: #f4f4f4;
 }
 
-.hero h2 {
+.hero h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #333;
+  font-weight:bold;
 }
 
 .hero p {
@@ -104,10 +107,6 @@ body {
 
 
 
-
-
-
-
 .statistics {
   text-align: center;
   padding: 50px 20px;
@@ -115,8 +114,9 @@ body {
 
 .statistics h2 {
   font-size: 2.5em;
+  font-weight: bold;
   margin-bottom: 40px;
-  color: #333;
+  color: var(--primary-text-button-color);
 }
 
 .statistics-container {
@@ -266,6 +266,16 @@ footer form input[type="submit"] {
  text-align: center;
 }
 
+span {
+  color:var(--primary-text-button-color);
+}
+
+
+.for_coders {
+margin-left:50px;
+
+}
+
 
 
 
@@ -277,10 +287,21 @@ footer form input[type="submit"] {
   gap: 10px;
   padding: 50px 20px;
   background-color: #f4f4f4;
-  justify-content: center;
+  
 }
 
+
+
 .coder_features h2 {
+  margin-bottom: 20px;
+  color: var(--primary-text-button-color);
+  
+}
+
+
+.coder_features h1 {
+  font-size: 2.5em;
+ font-weight:bold;
   margin-bottom: 20px;
   color: #333;
   
@@ -332,7 +353,8 @@ footer form input[type="submit"] {
   background-color: var(--primary-text-button-color);
   color: #fff;
   border: none;
-  margin: 5px;
+  margin-left: 45px;
+  margin-top: 30px;
   border-radius: 5px;
   font-size: 1em;
 }
@@ -355,7 +377,11 @@ footer form input[type="submit"] {
 }
 
 
- 
+
+
+
+
+
 
 
 
@@ -455,7 +481,7 @@ footer form input[type="submit"] {
   background-color: var(--primary-text-button-color);
   color: #fff;
   border: none;
-  margin: 5px;
+  margin: 45px;
   border-radius: 5px;
   font-size: 1em;
 }
@@ -466,8 +492,16 @@ footer form input[type="submit"] {
     gap: 10px;
     padding: 50px 20px;
     background-color: #f4f4f4;
-    justify-content: center;
+    
 }
+
+
+div.for_managers{
+  margin-left:50px ;
+}
+
+
+
 
 
 .testimonials-container{
@@ -480,6 +514,7 @@ footer form input[type="submit"] {
 .testimonials {
   background: white;
   padding: 20px;
+  margin-bottom: 50px;
   width: 500px;
   text-align: center;
   border-radius: 8px;
