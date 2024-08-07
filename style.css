@@ -383,6 +383,31 @@ footer form input[type="submit"] {
 }
 
 
+.showcase-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+
+}
+
+.column-1, .column-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.column-1 {
+  flex: 1;
+}
+
+.column-2 {
+  flex: 2;
+}
+
+
+
+
 .showcase {
   display: flex;
   align-items: flex-start;
@@ -445,3 +470,36 @@ footer form input[type="submit"] {
 }
 
 
+.testimonials-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.testimonials {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2 {
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+.testimonials p {
+  color: #666;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.testimonials img.june_cha {
+  border-radius: 50%;
+  margin: 20px 0;
+  width: 150px; 
+  height: auto;
+}
